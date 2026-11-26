@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIONARY Electronics</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">VISIONARY ELECTRONICS</div>
+
+    </header>
+
+    <section class="banner">
+
+        <h1>Our Electronics products</h1>
+
+        <p>Discover quality electronics at affordable prices.</p>
+
+    </section>
+
+    <div class="search">
+
+        <input type="text" id="searchInput" placeholder="Search for laptops, phones, accessories...">
+
+    </div>
+
+    <div class="categories">
+
+        <button onclick="filterCategory('all', this)">All Products</button>
+        <button onclick="filterCategory('laptops', this)">Laptops</button>
+        <button onclick="filterCategory('desktops', this)">Desktops</button>
+        <button onclick="filterCategory('graphics cards', this)">Graphics Cards</button>
+        <button onclick="filterCategory('phones', this)">Phones</button>
+        <button onclick="filterCategory('accessories', this)">Accessories</button>
+        <button onclick="filterCategory('tvs', this)">TVs</button>
+        <button onclick="filterCategory('sound systems', this)">Sound Systems</button>
+        <button onclick="filterCategory('routers', this)">Routers</button>
+        <button onclick="filterCategory('kitchen appliances', this)">Kitchen Appliances</button>
+        <button onclick="filterCategory('personal care', this)">personal care</button>
+        <button onclick="filterCategory('cables', this)">Cables</button>
+        <button onclick="filterCategory('lighting', this)">lighting</button>
+
+    </div>
+
+    <section class="inventory" id="inventory">
+
+        <h2>Available Products</h2>
+
+        <div class="product-container">
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card" data-category="laptops">
+
+                <img src="images/legion.png" alt="Legion Laptop">
+
+                <div class="product-info">
+
+                    <h3>Legion Laptop</h3>
+
+                    <p class="description">
+                        Core i9 ultra, 16GB RAM, 512GB SSD
+                    </p>
+
+                    <p class="price">KSh 165,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card" data-category="phones">
+
+                <img src="images/s26.jpg" alt="Samsung s26 Smartphone">
+
+                <div class="product-info">
+
+                    <h3>Samsung s26 </h3>
+
+                    <p class="description">
+                        128GB Storage, 8GB RAM
+                    </p>
+
+                    <p class="price">KSh 125,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/headset.jpg" alt="Headphones">
+
+                <div class="product-info">
+
+                    <h3>Headphones</h3>
+
+                    <p class="description">
+                        Wireless Bluetooth Headphones
+                    </p>
+
+                    <p class="price">KSh 3,500</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/logitech.jpg" alt="Headphones">
+
+                <div class="product-info">
+
+                    <h3>headphones</h3>
+
+                    <p class="description">
+                        Wireless Bluetooth Headphones
+                    </p>
+
+                    <p class="price">KSh 2,000</p>
+
+                    <p class="stock low-stock">Low Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+
+            </div>
+            <!-- PRODUCT 5 -->
+            <div class="product-card" data-category="phones">
+
+                <img src="images/12 p.jpg" alt="redmagic 12 pro">
+
+                <div class="product-info">
+
+                    <h3>redmagic 12 pro</h3>
+
+                    <p class="description">
+                        High-performance smartphone
+                    </p>
+
+                    <p class="price">KSh 150,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+
+            </div>
+            <!-- PRODUCT 6 -->
+            <div class="product-card" data-category="graphics cards">
+
+                <img src="images/5080.jpg" alt="RTX 5080 Graphics Card">
+
+                <div class="product-info">
+
+                    <h3>RTX 5080 Graphics Card</h3>
+
+                    <p class="description">
+                        High-performance graphics card
+                    </p>
+
+                    <p class="price">KSh 270,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+
+            </div>
+            <!-- PRODUCT 7 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/adapter.jpg" alt="Laptop Adapter">
+
+                <div class="product-info">
+
+                    <h3>Laptop Adapter</h3>
+
+                    <p class="description">
+                        High-quality laptop adapter
+                    </p>
+
+                    <p class="price">KSh 1,000</p>
+
+                    <p class="stock low-stock">Low Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 8 -->
+            <div class="product-card" data-category="cables">
+
+                <img src="images/AUX.jpg" alt="AUX Cable">
+
+                <div class="product-info">
+
+                    <h3>AUX Cable</h3>
+
+                    <p class="description">
+                        High-quality AUX cable
+                    </p>
+
+                    <p class="price">KSh 150</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 9 -->
+            <div class="product-card" data-category="cables">
+
+                <img src="images/AV.jpg" alt="AV Cable">
+
+                <div class="product-info">
+
+                    <h3>AV Cable</h3>
+
+                    <p class="description">
+                        High-quality AV cable
+                    </p>
+
+                    <p class="price">KSh 200</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 10 -->
+            <div class="product-card" data-category="kitchen appliances">
+
+                <img src="images/beko.jpg" alt="Beko Kitchen Appliance">
+
+                <div class="product-info">
+
+                    <h3>Beko Induction Cooker</h3>
+
+                    <p class="description">
+                        High-quality Beko kitchen appliance
+                    </p>
+
+                    <p class="price">KSh 100,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 11 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/brick 45.jpg" alt="charging brick 45w">
+
+                <div class="product-info">
+
+                    <h3>charging brick 45w</h3>
+
+                    <p class="description">
+                        High-quality charging brick
+                    </p>
+
+                    <p class="price">KSh 2,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 12 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/brick 140.jpg" alt="charging brick 140w">
+
+                <div class="product-info">
+
+                    <h3>charging brick 140w</h3>
+
+                    <p class="description">
+                        High-quality charging brick
+                    </p>
+
+                    <p class="price">KSh 4,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 13 -->
+            <div class="product-card" data-category="sound systems">
+
+                <img src="images/JBL bar.jpg" alt="JBL Bar">
+
+                <div class="product-info">
+
+                    <h3>JBL Bar</h3>
+
+                    <p class="description">
+                        High-quality JBL bar
+                    </p>
+
+                    <p class="price">KSh 30,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 14 -->
+            <div class="product-card" data-category="lighting">
+
+                <img src="images/long.jpg" alt="LED long bulb">
+
+                <div class="product-info">
+
+                    <h3>LED Long Bulb</h3>
+
+                    <p class="description">
+                        High-quality LED long bulb
+                    </p>
+
+                    <p class="price">KSh 700</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 15 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/modulator.jpg" alt="Car Modulator">
+
+                <div class="product-info">
+
+                    <h3>Car Modulator</h3>
+
+                    <p class="description">
+                        High-quality car modulator
+                    </p>
+
+                    <p class="price">KSh 1,500</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 16 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/osn.webp" alt="oraimo space buds neo">
+
+                <div class="product-info">
+
+                    <h3>Oraimo Space Buds Neo</h3>
+
+                    <p class="description">
+                        High-quality wireless earbuds
+                    </p>
+
+                    <p class="price">KSh 5,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 17 -->
+            <div class="product-card" data-category="personal care">
+
+                <img src="images/phillips.jpg" alt="Phillips Smoother">
+
+                <div class="product-info">
+
+                    <h3>Phillips Smoother</h3>
+
+                    <p class="description">
+                        Rechargeable high-performance hair smoother
+                    </p>
+
+                    <p class="price">KSh 3,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 18 -->
+            <div class="product-card" data-category="Routers">
+
+                <img src="images/razer.jpg" alt="Razer router">
+
+                <div class="product-info">
+
+                    <h3>Razer Router</h3>
+
+                    <p class="description">
+                        High-performance router
+                    </p>
+
+                    <p class="price">KSh 12,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 19 -->
+            <div class="product-card" data-category="cables">
+
+                <img src="images/RJ45.jpg" alt="RJ45 Cable">
+
+                <div class="product-info">
+
+                    <h3>RJ45 Cable</h3>
+
+                    <p class="description">
+                        High-quality network cable
+                        5 M long
+                    </p>
+
+                    <p class="price">KSh 750</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 20 -->
+            <div class="product-card" data-category="Desktops">
+
+                <img src="images/ROG.webp" alt="Gaming pc">
+
+                <div class="product-info">
+
+                    <h3>Gaming pc</h3>
+
+                    <p class="description">
+                        High-performance custom-built gaming PC with RGB lighting and liquid cooling
+                    </p>
+
+                    <p class="price">KSh 987,999</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 21 -->
+            <div class="product-card" data-category="lighting">
+
+                <img src="images/rope.jpg" alt="Rope Light">
+
+                <div class="product-info">
+
+                    <h3>Rope Light</h3>
+
+                    <p class="description">
+                        multi-color LED rope light for decoration
+                        5 m long
+                    </p>
+
+                    <p class="price">KSh 2,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 22 -->
+            <div class="product-card" data-category="Routers">
+
+                <img src="images/saf.jpg" alt="safaricom 5g router">
+
+                <div class="product-info">
+
+                    <h3>Safaricom 5G Router</h3>
+
+                    <p class="description">
+                        High-quality 5G router for fast internet connectivity
+                    </p>
+
+                    <p class="price">KSh 2,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 23 -->
+            <div class="product-card" data-category="accessories">
+
+                <img src="images/sonny.jpg" alt="Sonny neckband">
+
+                <div class="product-info">
+
+                    <h3>Sonny Neckband</h3>
+
+                    <p class="description">
+                        High-quality wireless neckband for immersive audio experience
+                    </p>
+
+                    <p class="price">KSh 5,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 24 -->
+            <div class="product-card" data-category="lighting">
+
+                <img src="images/strip.jpg" alt="strip light">
+
+                <div class="product-info">
+
+                    <h3>Strip Light</h3>
+
+                    <p class="description">
+                        High-definition strip light for versatile illumination
+                        5 m long
+                    </p>
+
+                    <p class="price">KSh 450</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 25 -->
+            <div class="product-card" data-category="TVs">
+
+                <img src="images/TCL 65`.webp" alt="TCL Smart TV">
+
+                <div class="product-info">
+
+                    <h3>TCL Smart TV</h3>
+
+                    <p class="description">
+                        65-inch 4K UHD Smart TV with HDR support
+                    </p>
+
+                    <p class="price">KSh 70,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 26 -->
+            <div class="product-card" data-category="Routers">
+
+                <img src="images/tenda.jpg" alt="Tenda Router">
+
+                <div class="product-info">
+
+                    <h3>Tenda Router</h3>
+
+                    <p class="description">
+                        High-performance router for reliable Wi-Fi connectivity
+                    </p>
+
+                    <p class="price">KSh 1,600</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 27 -->
+            <div class="product-card" data-category="personal care">
+
+                <img src="images/trimmer.jpg" alt="Rechargable Beard Trimmer">
+
+                <div class="product-info">
+
+                    <h3>Rechargable Beard Trimmer</h3>
+
+                    <p class="description">
+                        High-quality trimmer for precise grooming
+                    </p>
+
+                    <p class="price">KSh 2,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 28 -->
+            <div class="product-card" data-category="sound systems">
+
+                <img src="images/vp.jpg" alt="Vision Plus Sound Bar">
+
+                <div class="product-info">
+
+                    <h3>Vision Plus Sound Bar</h3>
+
+                    <p class="description">
+                        High-quality sound bar for immersive audio experience
+                    </p>
+
+                    <p class="price">KSh 8,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 29 -->
+            <div class="product-card" data-category="personal care">
+
+                <img src="images/wahl.jpg" alt="Wahl Trimmer">
+
+                <div class="product-info">
+
+                    <h3>Wahl Trimmer</h3>
+
+                    <p class="description">
+                        High-quality trimmer for precise grooming
+                    </p>
+
+                    <p class="price">KSh 1,500</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 30 -->
+            <div class="product-card" data-category="sound systems">
+
+                <img src="images/lg.webp" alt="LG Home Theater System">
+
+                <div class="product-info">
+
+                    <h3>LG Home Theater System</h3>
+
+                    <p class="description">
+                        High-quality sound system for immersive audio experience
+                    </p>
+
+                    <p class="price">KSh 50,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 31 -->
+            <div class="product-card" data-category="phones">
+
+                <img src="images/15p.jpg" alt="Redmi Note 15 Pro">
+
+                <div class="product-info">
+
+                    <h3>Redmi Note 15 Pro</h3>
+
+                    <p class="description">
+                        High-quality smartphone with excellent performance
+                    </p>
+
+                    <p class="price">KSh 25,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 32 -->
+            <div class="product-card" data-category="Graphics Cards">
+
+                <img src="images/3080.jpg" alt="RTX 3080 Graphics Card">
+
+                <div class="product-info">
+
+                    <h3>RTX 3080 Graphics Card</h3>
+
+                    <p class="description">
+                        High-quality graphics card for immersive gaming experience
+                    </p>
+
+                    <p class="price">KSh 62,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 33 -->
+            <div class="product-card" data-category="Graphics Cards">
+
+                <img src="images/titan.jpg" alt="NVIDIA Titan Graphics Card">
+
+                <div class="product-info">
+
+                    <h3>NVIDIA Titan V TI</h3>
+
+                    <p class="description">
+                        High-quality graphics card for immersive gaming experience
+                    </p>
+
+                    <p class="price">KSh 32,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 34 -->
+            <div class="product-card" data-category="Desktops">
+
+                <img src="images/dell.jpg" alt="Dell Inspiron Desktop">
+
+                <div class="product-info">
+
+                    <h3>Dell Inspiron Desktop</h3>
+
+                    <p class="description">
+                        with monitor, keyboard and mouse, for productivity and entertainment
+                    </p>
+
+                    <p class="price">KSh 72,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 35 -->
+            <div class="product-card" data-category="Desktops">
+
+                <img src="images/hp.jpg" alt="HP Pavilion Desktop">
+
+                <div class="product-info">
+
+                    <h3>HP Pavilion Desktop</h3>
+
+                    <p class="description">
+                        with monitor, keyboard and mouse, for productivity and entertainment
+                    </p>
+
+                    <p class="price">KSh 82,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 36 -->
+            <div class="product-card" data-category="laptops">
+
+                <img src="images/hpl.webp" alt="HP elitebook Laptop">
+
+                <div class="product-info">
+
+                    <h3>HP elitebook Laptop</h3>
+
+                    <p class="description">
+                        High-quality laptop for productivity and entertainment
+                    </p>
+
+                    <p class="price">KSh 92,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 37 -->
+            <div class="product-card" data-category="laptops">
+
+                <img src="images/macbook.webp" alt="MacBook air m5 Laptop">
+
+                <div class="product-info">
+
+                    <h3>MacBook air m5 Laptop</h3>
+
+                    <p class="description">
+                        High-quality laptop for productivity and entertainment
+                    </p>
+
+                    <p class="price">KSh 102,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 38 -->
+            <div class="product-card" data-category="TVs">
+
+                <img src="images/H tv.jpg" alt="Hisense Smart TV">
+
+                <div class="product-info">
+
+                    <h3>Hisense Smart TV</h3>
+
+                    <p class="description">
+                        High-quality smart TV 55`for entertainment
+                    </p>
+
+                    <p class="price">KSh 43,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 39 -->
+            <div class="product-card" data-category="TVs">
+
+                <img src="images/vitron.jpg" alt="Vitron Smart TV">
+
+                <div class="product-info">
+
+                    <h3>Vitron Smart TV</h3>
+
+                    <p class="description">
+                        High-quality smart TV 43`for entertainment
+                    </p>
+
+                    <p class="price">KSh 18,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 40 -->
+            <div class="product-card" data-category="Kitchen Appliances">
+
+                <img src="images/ninja.jpg" alt="Ninja Blender">
+
+                <div class="product-info">
+
+                    <h3>Ninja Blender</h3>
+
+                    <p class="description">
+                        High-quality 3 in 1 blender for smoothies and more
+                    </p>
+
+                    <p class="price">KSh 12,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+            <!-- PRODUCT 41 -->
+            <div class="product-card" data-category="Kitchen Appliances">
+
+                <img src="images/microwave.webp" alt="Microwave Oven">
+
+                <div class="product-info">
+
+                    <h3>Microwave Oven</h3>
+
+                    <p class="description">
+                        High-quality microwave oven for quick heating and grilling
+                    </p>
+
+                    <p class="price">KSh 15,000</p>
+
+                    <p class="stock">In Stock</p>
+
+                    <button>View Details</button>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+
+        <h3>VISIONARY ELECTRONICS</h3>
+
+        <p>Quality Electronics at Affordable Prices</p>
+
+        <p>Copyright 2026 Visionary</p>
+
+    </footer>
+
+    <script src="products-page.js"></script>
+
+
+</body>
+
+</html>
